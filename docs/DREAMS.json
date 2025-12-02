@@ -1,0 +1,376 @@
+{
+  "dreams": [
+    {
+      "id": "d01",
+      "title": {
+        "en": "The Underground Phallus"
+      },
+      "dateOrPeriod": {
+        "en": "Childhood, approx. 3-4 years old"
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 758
+        }
+      },
+      "context": {
+        "en": [
+          "My mother had taught me a prayer which I had to say every evening. I gladly did so because it gave me a sense of comfort in face of the vague uncertainties of the night:",
+          "Spread out thy wings, Lord Jesus mild,",
+          "And take to thee thy chick, thy child.",
+          "If Satan would devour it,",
+          "No harm shall o'erpower it,",
+          "So let the angels sing!",
+          "Lord Jesus was comforting, a nice, benevolent gentleman like Flerr  Wegenstein up at the castle, rich, powerful, respected, and mindful of little children at night. Why he should be winged like a bird was a conundrum that did not worry me any further. Far more significant and thought-provoking was the fact that little children were compared to chicks which Lord Jesus evidently \"took\" reluctantly, like bitter medicine. This was difficult to understand. But I understood at once that Satan liked chicks and had to be prevented from eating them. So, although Lord Jesus did not like the taste, he ate them anyway, so that Satan would not get them.. As far as that went, my argument was comforting. But now I was hearing that Lord Jesus \"took\" other people to himself as well, and that this \"taking\" was the same as putting them in a hole in the ground.",
+          "This sinister analogy had unfortunate consequences. I began to distrust Lord Jesus. He lost the aspect of a big, comforting, benevolent bird and became associated with the gloomy black men in frock coats, top hats, and shiny black boots who busied themselves with the black box.",
+          "These ruminations of mine led to my first conscious trauma. One hot summer day I was sitting alone, as usual, on the road in front of the house, playing in the sand. The road led past the house up a hill, then disappeared in the wood on the hilltop. So from the house you could see a stretch of the road. Looking up, I saw a figure in a strangely broad hat and a long black garment coming down from the wood. It looked like a man wearing women's clothes. Slowly the figure drew nearer, and I could now see that it really was a man wearing a kind of black robe that reached to his feet. At the sight of him I was overcome with fear, which rapidly grew into deadly terror as the frightful recognition shot through my mind: \"That is a Jesuit.\" Shortly before, I had overheard a conversation between my father and a visiting colleague concerning the nefarious activities of the Jesuits. From the half-irritated, half-fearful tone of my father's remarks I gathered that \"Jesuits\" meant something specially dangerous, even for my father- Actually I had no idea what Jesuits were, but I was familiar with the word \"Jesus\" from my little prayer.",
+          "The man coming down the road must be in disguise, I thought; that was why he wore women's clothes. Probably he had evil intentions. Terrified, I ran helter-skelter into the house, rushed up the stairs, and hid under a beam in the darkest corner of the attic. I don't know how long I remained there, but it must have been a fairly long time, because, when I ventured down again to the first floor and cautiously stuck my head out of the window, far and wide there was not a trace of the black figure to be seen. For days afterward the hellish fright clung to my limbs and kept me in the house. And even when I began to play in the road again, the wooded hilltop was still the object of my uneasy vigilance. Later I realized, of course, that the black figure was a harmless Catholic priest.",
+          "At about the same time--l could not say with absolute certainty whether it preceded this experience or not— I had the earliest dream I can remember, a dream which was to preoccupy me all my life. I was then between three and four years old."
+        ]
+      },
+      "scenes": [
+        {
+          "id": "s01",
+          "depict": {
+            "en": "The vicarage stood quite alone near Laufen castle, and there was a big meadow stretching back from the sexton's farm. In the dream I was in this meadow."
+          },
+          "image": {
+            "prompt": "The vicarage stood quite alone near Laufen castle, and there was a big meadow stretching back from the sexton's farm.",
+            "path": "./assets/dreams-d01-s01.png"
+          }
+        },
+        {
+          "id": "s02",
+          "depict": {
+            "en": "Suddenly I discovered a dark, rectangular, stone-lined hole in the ground. I had never seen it before. I ran forward curiously and peered down into it."
+          },
+          "image": {
+            "prompt": "A dark, rectangular, stone-lined hole in the ground.",
+            "path": "./assets/dreams-d01-s02.png"
+          }
+        },
+        {
+          "id": "s03",
+          "depict": {
+            "en": "Then I saw a stone stairway leading down. Hesitantly and fearfully, I descended."
+          },
+          "image": {
+            "prompt": "A stone stairway leading down to the underground.",
+            "path": "./assets/dreams-d01-s03.png"
+          }
+        },
+        {
+          "id": "s04",
+          "depict": {
+            "en": "At the bottom was a doorway with a round arch, closed off by a green curtain. It was a big, heavy curtain of worked stuff like brocade, and it looked very sumptuous. Curious to see what might be hidden behind, I pushed it aside."
+          },
+          "image": {
+            "prompt": "A dark, underground doorway with a round arch, closed off by a green curtain. It was a big, heavy curtain of worked stuff like brocade, and it looked very sumptuous.",
+            "path": "./assets/dreams-d01-s04.png"
+          }
+        },
+        {
+          "id": "s05",
+          "depict": {
+            "en": [
+              "I saw before me in the dim light a rectangular chamber about thirty feet long. The ceiling was arched and of hewn stone. The floor was laid with flagstones, and in the center a red carpet ran from the entrance to a low platform. On this platform stood a wonderfully rich golden throne. I am not certain, but perhaps a red cushion lay on the seat. It was a magnificent throne, a real king's throne in a fairy tale. Something was standing on it which I thought at first was a tree trunk twelve to fifteen feet high and about one and a half to two feet thick. It was a huge thing, reaching almost to the ceiling. But it was of a curious composition: it was made of skin and naked flesh, and on top there was something like a rounded head with no face and no hair. On the very top of the head was a single eye, gazing motionlessly upward.",
+              "It was fairly light in the room, although there were no windows and no apparent source of light. Above the head, however, was an aura of brightness. The thing did not move, yet I had the feeling that it might at any moment crawl off the throne like a worm and creep toward me. I was paralyzed with terror. At that moment I heard from outside and above me my mother's voice. She called out,\"Yes, just look at him. That is the man-eater!\" That intensified my terror still more, and I awoke sweating and scared to death."
+            ]
+          },
+          "image": {
+            "prompt": "In the dim light there was a rectangular chamber about thirty feet long. The ceiling was arched and of hewn stone. The floor was laid with flagstones, and in the center a red carpet ran from the entrance to a low platform. On this platform stood a wonderfully rich golden throne. A red cushion lay on the seat. It was a magnificent throne. Something was standing on it, twelve to fifteen feet high and about one and a half to two feet thick. It was a huge thing, reaching almost to the ceiling. But it was of a curious composition: it was made of skin and naked flesh, and on top there was something like a rounded head with no face and no hair. On the very top of the head was a single eye, gazing motionlessly upward.",
+            "path": "./assets/dreams-d01-s05.png"
+          }
+        }
+      ],
+      "analysis": {
+        "en": [
+          "For many nights afterward I was afraid to go to sleep, because I feared I might have another dream like that. ",
+          "This dream haunted me for years. Only much later did I realize that what I had seen was a phallus, and it was decades before I understood that it was a ritual phallus. I could never make out whether my mother meant, \"This is the man-eater,\" or, \"That is the man-eater.\" In the first case she would have meant that not Lord Jesus or the Jesuit was the devourer of little children, but the phallus; in the second case that the \"man-eater\" in general was symbolized by the phallus, so that the dark Lord Jesus, the Jesuit, and the phallus were identical. ",
+          "The abstract significance of the phallus is shown by the fact that it was enthroned by itself, \"ithyphallically\" (upright) The hole in the meadow probably represented a grave. The grave itself was an underground temple whose green curtain symbolized the meadow, in other words the mystery of Earth with her covering of green vegetation. The carpet was blood-red. What about the vault? Perhaps I had already been to the Munot, the citadel of Schaffhausen? This is not likely, since no one would take a three- year-old child up there. So it cannot be a memory-trace. Equally, I do not know where the anatomically correct phallus can have come from. The interpretation of the orificium urethrae as an eye, with the source of light apparently above it, points to the etymology of the word phallus (shining, bright).",
+          "At all events, the phallus of this dream seems to be a subterranean God \"not to be named,\" and such it remained throughout my youth, reappearing whenever anyone spoke too emphatically about Lord Jesus. Lord Jesus never became quite real for me, never quite acceptable, never quite lovable, for again and again I would think of his underground counterpart, a frightful revelation which had been accorded me without my seeking it. The Jesuit's \"disguise\" cast its shadow over the Christian doctrine I had been taught. Often it seemed to me a solemn masquerade, a kind of funeral at which the mourners put on serious or mournful faces but the next moment were secretly laughing and not really sad at all. Lord Jesus seemed to me in some ways a god of death, helpful, it is true, in that he scared away the terrors of the night, but himself uncanny, a crucified and bloody corpse. Secretly, his love and kindness, which I always heard praised, appeared doubtful to me, chiefly because the people who talked most about \"dear Lord Jesus\" wore black frock coats and shiny black boots which reminded me of burials. They were my father's colleagues as well as eight of my uncles-all parsons. For many years they inspired fear in me--not to speak of occasional Catholic priests who reminded me of the terrifying Jesuit who had irritated and even alarmed my father. In later years and until my confirmation, I made every effort to force myself to take the required positive attitude to Christ. But I could never succeed in overcoming my secret distrust. ",
+          "The fear of the \"black man,\" which is felt by every child, was not the essential thing in that experience; it was, rather, the recognition that stabbed through my childish brain: \"That is a Jesuit.\" So the important thing in the dream was its remarkable symbolic setting and the astounding interpretation: \"That is the man-eater.\" Not the child's ogre of a man-eater, but the fact that this was the man-eater, and that it was sitting on a golden throne beneath the earth. For my childish imagination it was first of all the king who sat on a golden throne; then, on a much more beautiful and much higher and much more golden throne far, far away in the blue sky sat God and Lord Jesus, with golden crowns and white robes. Yet from this same Lord Jesus came the \"Jesuit,\" in black women's garb, with a broad black hat, down from the wooded hill. I had to glance up there every so often to see whether another danger might not be approaching. In the dream I went down into the hole in the earth and found something very different on a golden throne, something non-human and underworldly, which gazed fixedly upward and fed on human flesh. It was only fifty years later that a passage in a study of religious ritual burned into my eyes, concerning the motif of cannibalism that underlies the symbolism of the Mass. Only then did it become clear to me how exceedingly unchild-like, how sophisticated and oversophisticated was the thought that had begun to break through into consciousness in those two experiences. Who was it speaking in me? Whose mind had devised them? What kind of superior intelligence was at work? I know every numbskull will babble on about \"black man,\" \"man- eater,\" \"chance,\" and \"retrospective interpretation,\" in order to banish something terribly inconvenient that might sully the familiar picture of childhood innocence. Ah, these good, efficient, healthy- minded people, they always remind me of those optimistic tadpoles who bask in a puddle in the sun, in the shallowest of waters, crowding together and amiably wriggling their tails, totally unaware that the next morning the puddle will have dried up and left them stranded. ",
+          "Who spoke to me then? Who talked of problems far beyond my knowledge? Who brought the Above and Below together, and laid the foundation for everything that was to fill the second half of my life with stormiest passion? Who but that alien guest who came both from above and from below? ",
+          "Through this childhood dream I was initiated into the secrets of the earth. What happened then was a kind of burial in the earth, and many years were to pass before I came out again. Today I know that it happened in order to bring the greatest possible amount of light into the darkness. It was an initiation into the realm of darkness. My intellectual life had its unconscious beginnings at that time."
+        ]
+      }
+    },
+    {
+      "id": "d02+03",
+      "title": {
+        "en": "Natural Sciences: The Bone and the Creature"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 3812
+        }
+      }
+    },
+    {
+      "id": "d04",
+      "title": {
+        "en": "The Kindling in the Dark"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 3935
+        }
+      }
+    },
+    {
+      "id": "d05",
+      "title": {
+        "en": "The Deceased Father: the Returns"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 4305
+        }
+      }
+    },
+    {
+      "id": "d06",
+      "title": {
+        "en": "The Female Patient Saw from Below"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 5838
+        }
+      }
+    },
+    {
+      "id": "d07+08",
+      "title": {
+        "en": "The Jewish Female Patient"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 6046
+        }
+      }
+    },
+    {
+      "id": "d09",
+      "title": {
+        "en": "The Prehistoric Bones under the House"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 6902
+        }
+      }
+    },
+    {
+      "id": "d10+11",
+      "title": {
+        "en": "The Austrian Border and the Knight"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 7085
+        }
+      }
+    },
+    {
+      "id": "d12+13",
+      "title": {
+        "en": "The Avian Anima and the Dead Ancients"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 7401
+        }
+      }
+    },
+    {
+      "id": "d14",
+      "title": {
+        "en": "The Frozen Worlds"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 7600
+        }
+      }
+    },
+    {
+      "id": "d15",
+      "title": {
+        "en": "The Killing of Siegfried"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 7764
+        }
+      }
+    },
+    {
+      "id": "d16",
+      "title": {
+        "en": "Liverpool"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 8553
+        }
+      }
+    },
+    {
+      "id": "d17+18",
+      "title": {
+        "en": "The Unknown Wing of the House: The Library and the Manor"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 8734
+        }
+      }
+    },
+    {
+      "id": "d19",
+      "title": {
+        "en": "The Unknown Wing of the House: The Fish Laboratory and the Reception Room for Spirits"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 9234
+        }
+      }
+    },
+    {
+      "id": "d20",
+      "title": {
+        "en": "The Deceased Father: The Bible and the Highest Presence"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 9417
+        }
+      }
+    },
+    {
+      "id": "d21",
+      "title": {
+        "en": "The Footsteps outside the Bollingen Tower"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 9905
+        }
+      }
+    },
+    {
+      "id": "d22",
+      "title": {
+        "en": "The Arabian Prince"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 10456
+        }
+      }
+    },
+    {
+      "id": "d23",
+      "title": {
+        "en": "The Black Barber"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 11722
+        }
+      }
+    },
+    {
+      "id": "d24",
+      "title": {
+        "en": " Black Barber"
+      },
+      "dateOrPeriod": {
+        "en": ""
+      },
+      "location": {
+        "txt": {
+          "path": "./docs/Memories-Dreams-Reflections.txt",
+          "line": 12077
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "imageGeneration": {
+      "model": "doubao",
+      "prompt": "帮我生成图片：A visual depict of the following scene, in Claude Monet's style\n{content}\n比例 「4:3」，无文字"
+    }
+  }
+}

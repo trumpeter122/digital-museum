@@ -18,7 +18,7 @@ const Concepts: React.FC = () => {
               <div className="h-72 w-full overflow-hidden mb-8 border-b-2 border-jung-gold/20">
                 <img src={concept.imageUrl} alt={t(concept.name)} className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 grayscale hover:grayscale-0" />
               </div>
-              <h3 className="font-display font-bold text-4xl text-jung-gold mb-6 group-hover:text-jungLight-accent dark:group-hover:text-jungDark-accent transition-colors">{t(concept.name)}</h3>
+              <h3 className="font-display font-bold text-4xl text-jung-gold mb-6 group-hover:text-jungLight-accent dark:group-hover:text-jungDark-accent transition-colors truncate">{t(concept.name)}</h3>
               <p className="font-body text-xl text-jungLight-text dark:text-jungDark-text font-medium opacity-90 line-clamp-4 leading-relaxed">
                 {t(concept.shortDescription)}
               </p>
