@@ -18,10 +18,3 @@ export const CONCEPT_IDS = [
 ] as const;
 
 export type ConceptId = typeof CONCEPT_IDS[number];
-
-export const DREAM_IDS = [
-  'd1',
-  'd2'
-] as const;
-
-export type DreamId = typeof DREAM_IDS[number];
