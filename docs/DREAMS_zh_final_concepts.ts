@@ -563,7 +563,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "At a reception in my house the young woman came up to me in heavy rain and asked for an umbrella; I found one and handed it to her on my knees, as if she were a goddess.",
-            path: "./assets/dreams-d07-s01.png",
+            path: "./assets/dreams-d07-s02.png",
           },
         },
         {
