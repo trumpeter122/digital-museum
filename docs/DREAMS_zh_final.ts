@@ -18,20 +18,6 @@ type Content = {
   [key: string]: string | string[];
 };
 
-// Jungian concepts that can be associated with dreams.
-type Concept =
-  | 'alchemy'
-  | 'anima-animus'
-  | 'archetypes'
-  | 'complexes'
-  | 'individuation'
-  | 'personality-types'
-  | 'persona'
-  | 'psyche'
-  | 'self'
-  | 'shadow'
-  | 'synchronicity';
-
 type TextBlock = {
   id: string;
   text: Content;
@@ -68,8 +54,6 @@ type Dream = {
   location: any;
   // Context, Interpretation, Impact, and Scene of the dreams, each one being potentially multiple, ordered stricly according to Jung's original narration
   contents: (Context | Interpretation | Impact | Scene)[];
-  // Jungian concepts associated with this dream.
-  relatedConcepts: Concept[];
 };
 
 export const DREAMS: {
@@ -220,7 +204,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['archetypes', 'shadow', 'self'],
     },
     {
       id: "d02+03",
@@ -296,7 +279,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['archetypes', 'psyche'],
     },
     {
       id: "d04",
@@ -369,7 +351,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['self', 'individuation'],
     },
     {
       id: "d05",
@@ -430,7 +411,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['complexes', 'shadow'],
     },
     {
       id: "d06",
@@ -493,7 +473,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['anima-animus', 'psyche'],
     },
     {
       id: "d07",
@@ -587,7 +566,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['anima-animus'],
     },
     {
       id: "d08",
@@ -707,7 +685,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['archetypes', 'shadow'],
     },
     {
       id: "d09",
@@ -787,7 +764,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['archetypes', 'shadow'],
     },
     {
       id: "d10+11",
@@ -871,7 +847,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['anima-animus', 'archetypes'],
     },
     {
       id: "d12",
@@ -945,7 +920,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['self', 'individuation'],
     },
     {
       id: "d13",
@@ -1027,7 +1001,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['archetypes', 'shadow'],
     },
     {
       id: "d14",
@@ -1088,7 +1061,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['self', 'individuation'],
     },
     {
       id: "d15+16",
@@ -1170,7 +1142,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['archetypes', 'self'],
     },
     {
       id: "d17",
@@ -1279,7 +1250,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['synchronicity', 'archetypes'],
     },
     {
       id: "d18",
@@ -1359,7 +1329,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['self', 'archetypes'],
     },
     {
       id: "d19",
@@ -1420,7 +1389,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['synchronicity', 'psyche'],
     },
     {
       id: "d20",
@@ -1500,7 +1468,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['persona', 'anima-animus'],
     },
     {
       id: "d21",
@@ -1555,7 +1522,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['shadow'],
     },
     {
       id: "d22",
@@ -1644,7 +1610,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['alchemy', 'archetypes'],
     },
     {
       id: "d23",
@@ -1699,7 +1664,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['self', 'individuation'],
     },
     {
       id: "d24+25",
@@ -1773,7 +1737,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['synchronicity'],
     },
     {
       id: "d26",
@@ -1828,7 +1791,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['archetypes', 'psyche'],
     },
     {
       id: "d27",
@@ -1875,7 +1837,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['psyche', 'self'],
     },
     {
       id: "d28",
@@ -1928,7 +1889,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['shadow', 'archetypes'],
     },
     {
       id: "d29",
@@ -1975,7 +1935,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['complexes', 'self'],
     },
     {
       id: "d30+31",
@@ -2047,7 +2006,6 @@ export const DREAMS: {
           },
         },
       ],
-      relatedConcepts: ['synchronicity', 'self', 'psyche'],
     },
   ],
   metadata: {

@@ -68,7 +68,9 @@ type Dream = {
   location: any;
   // Context, Interpretation, Impact, and Scene of the dreams, each one being potentially multiple, ordered stricly according to Jung's original narration
   contents: (Context | Interpretation | Impact | Scene)[];
-  // Jungian concepts associated with this dream.
+  /**
+   * Jungian concepts associated with this dream.
+   */
   relatedConcepts: Concept[];
 };
 
