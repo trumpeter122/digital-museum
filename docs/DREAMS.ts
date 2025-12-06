@@ -40,10 +40,10 @@ type Impact = TextBlock & {
 // A scene in the dream
 type Scene = TextBlock & {
   textBlockType: "scene";
-  image?: {
+  image: {
     path: string; // Relative path to the image depicting the scene
     _prompt?: string; // Prompt for image generation
-  };
+  } | null;
 };
 
 type Dream = {
@@ -86,7 +86,7 @@ export const DREAMS: {
               "If Satan would devour it,",
               "No harm shall o'erpower it,",
               "So let the angels sing!",
-              'Lord Jesus was comforting, a nice, benevolent gentleman like Flerr  Wegenstein up at the castle, rich, powerful, respected, and mindful of little children at night. Why he should be winged like a bird was a conundrum that did not worry me any further. Far more significant and thought-provoking was the fact that little children were compared to chicks which Lord Jesus evidently "took" reluctantly, like bitter medicine. This was difficult to understand. But I understood at once that Satan liked chicks and had to be prevented from eating them. So, although Lord Jesus did not like the taste, he ate them anyway, so that Satan would not get them.. As far as that went, my argument was comforting. But now I was hearing that Lord Jesus "took" other people to himself as well, and that this "taking" was the same as putting them in a hole in the ground.',
+              'Lord Jesus was comforting, a nice, benevolent gentleman like Flerr  Wegenstein up at the castle, rich, powerful, respected, and mindful of little children at night. Why he should be winged like a bird was a conundrum that did not worry me any further. Far more significant and thought-provoking was the fact that little children were compared to chicks which Lord Jesus evidently "took" reluctantly, like bitter medicine. This was difficult to understand. But I understood at once that Satan liked chicks and had to be prevented from eating them. So, although Lord Jesus did not like the taste, he ate them anyway, so that Satan would not get them.. As far as that went, my argument was comforting. But now I was hearing that Lord Jesus "took" other people to himself as well, and that this "taking" was teh same as putting them in a hole in the ground.',
               "This sinister analogy had unfortunate consequences. I began to distrust Lord Jesus. He lost the aspect of a big, comforting, benevolent bird and became associated with the gloomy black men in frock coats, top hats, and shiny black boots who busied themselves with the black box.",
               'These ruminations of mine led to my first conscious trauma. One hot summer day I was sitting alone, as usual, on the road in front of the house, playing in the sand. The road led past the house up a hill, then disappeared in the wood on the hilltop. So from the house you could see a stretch of the road. Looking up, I saw a figure in a strangely broad hat and a long black garment coming down from the wood. It looked like a man wearing women\'s clothes. Slowly the figure drew nearer, and I could now see that it really was a man wearing a kind of black robe that reached to his feet. At the sight of him I was overcome with fear, which rapidly grew into deadly terror as the frightful recognition shot through my mind: "That is a Jesuit." Shortly before, I had overheard a conversation between my father and a visiting colleague concerning the nefarious activities of the Jesuits. From the half-irritated, half-fearful tone of my father\'s remarks I gathered that "Jesuits" meant something specially dangerous, even for my father- Actually I had no idea what Jesuits were, but I was familiar with the word "Jesus" from my little prayer.',
               "The man coming down the road must be in disguise, I thought; that was why he wore women's clothes. Probably he had evil intentions. Terrified, I ran helter-skelter into the house, rushed up the stairs, and hid under a beam in the darkest corner of the attic. I don't know how long I remained there, but it must have been a fairly long time, because, when I ventured down again to the first floor and cautiously stuck my head out of the window, far and wide there was not a trace of the black figure to be seen. For days afterward the hellish fright clung to my limbs and kept me in the house. And even when I began to play in the road again, the wooded hilltop was still the object of my uneasy vigilance. Later I realized, of course, that the black figure was a harmless Catholic priest.",
@@ -175,7 +175,7 @@ export const DREAMS: {
     {
       id: "d02+03",
       title: {
-        en: "Natural Sciences: The Bone and the Creature",
+        en: "The Bones; The Creature",
       },
       time: {
         en: "Late adolescence, before choosing university studies (Student Years, ca. 1895)",
@@ -191,7 +191,7 @@ export const DREAMS: {
           textBlockType: "context",
           id: "c01",
           text: {
-            en: 'Some weeks previously, just at the time when No. 1 and No. 2 were wrestling for a decision, I had two dreams.',
+            en: "Some weeks previously, just at the time when No. 1 and No. 2 were wrestling for a decision, I had two dreams.",
           },
         },
         {
@@ -395,7 +395,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d07+08",
+      id: "d07",
       title: {
         en: "The Jewish Female Patient",
       },
@@ -430,6 +430,7 @@ export const DREAMS: {
               "I learned that he had been a rabbi, a zaddik who belonged to a Jewish sect and was said to have been a kind of saint and to possess second sight. I explained to her, 'Your grandfather was a zaddik. Your father became an apostate to the Jewish faith. He betrayed the secret and turned his back on God. And you have your neurosis because the fear of God has got into you.' That struck her like a bolt of lightning.",
             ],
           },
+          image: null
         },
         {
           textBlockType: "scene",
@@ -442,8 +443,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "At a reception in my house the young woman came up to me in heavy rain and asked for an umbrella; I found one and handed it to her on my knees, as if she were a goddess.",
-            path: "./assets/dreams-d07+08-s01.png",
+              "At a reception in my house the young woman came in heavy rain.",
+            path: "./assets/dreams-d07-s02.png",
           },
         },
         {
@@ -466,7 +467,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d09",
+      id: "d08",
       title: {
         en: "The Prehistoric Bones under the House",
       },
@@ -498,7 +499,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "In an unfamiliar two-storied house that was 'my house' I explored an upper-story salon with fine rococo furnishings and wondered what lay below.",
-            path: "./assets/dreams-d09-s01.png",
+            path: "./assets/dreams-d08-s01.png",
           },
         },
         {
@@ -513,7 +514,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "In my unfamiliar house I descended to a medieval ground floor with red brick floors, opened a heavy door, and found a stone stairway leading down into a cellar.",
-            path: "./assets/dreams-d09-s02.png",
+            path: "./assets/dreams-d08-s02.png",
           },
         },
         {
@@ -527,7 +528,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "In a beautifully vaulted ancient room below ground, its stone walls showed layers of brick and brick chips in the mortar, revealing Roman construction.",
-            path: "./assets/dreams-d09-s03.png",
+            path: "./assets/dreams-d08-s03.png",
           },
         },
         {
@@ -541,7 +542,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "Lifting a stone slab ring revealed another stairway down into a low rock-cut cave whose dusty floor was strewn with bones, broken pottery, and two very old half-disintegrated human skulls.",
-            path: "./assets/dreams-d09-s04.png",
+            path: "./assets/dreams-d08-s04.png",
           },
         },
         {
@@ -564,7 +565,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d10+11",
+      id: "d09",
       title: {
         en: "The Austrian Border and the Knight",
       },
@@ -596,8 +597,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "In a mountainous region on the Swiss-Austrian border an elderly man in the uniform of an Imperial Austrian customs official walked past, and I was told he was the ghost of a customs officer who had died years ago, one of those who still could not die properly.",
-            path: "./assets/dreams-d10+11-s01.png",
+              "In a mountainous region on the Swiss-Austrian border an elderly man in the uniform of an Imperial Austrian customs official walked past. I saw the scene from afar and it was dark.",
+            path: "./assets/dreams-d09-s01.png",
           },
         },
         {
@@ -611,8 +612,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "In an Italian city a crowd streamed toward me, and in their midst walked a knight in full armor, wearing a helmet and a white tunic woven with a large red cross front and back, invisible to everyone but me.",
-            path: "./assets/dreams-d10+11-s02.png",
+              "In an Italian city a crowd streamed toward me, and in their midst walked a knight in full armor, wearing a helmet and a white tunic woven with a large red cross front and back.",
+            path: "./assets/dreams-d09-s02.png",
           },
         },
         {
@@ -628,9 +629,9 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d12+13",
+      id: "d10+11",
       title: {
-        en: "The Avian Anima and the Dead Ancients",
+        en: "The Avian Anima; The Dead Ancients",
       },
       time: {
         en: "Christmas 1912 and the following period",
@@ -646,7 +647,7 @@ export const DREAMS: {
           textBlockType: "context",
           id: "c01",
           text: {
-            en: 'I asked myself: “But then what is your myth—the myth in which you do live?” At this point the dialogue with myself became uncomfortable, and I stopped thinking. Then, around Christmas of 1912, I had a dream.',
+            en: "I asked myself: “But then what is your myth—the myth in which you do live?” At this point the dialogue with myself became uncomfortable, and I stopped thinking. Then, around Christmas of 1912, I had a dream.",
           },
         },
         {
@@ -661,8 +662,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "In a magnificent Italian loggia with pillars, marble floor, and balustrade, as my children sat at the table, a white bird descended, transformed into a little girl who embraced my neck, then vanished and became again a dove speaking in a human voice about transforming only in the first hours of the night while the male dove is busy with the twelve dead.",
-            path: "./assets/dreams-d12+13-s01.png",
+              "In a magnificent Italian loggia with pillars, marble floor, and balustrade, as my children sat at the table, a white bird descended, transformed into a little girl.",
+            path: "./assets/dreams-d10+11-s01.png",
           },
         },
         {
@@ -677,8 +678,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "In a region like the Alyscamps near Arles I came upon a twelfth-century crusader in chain mail lying with clasped hands, long seemingly dead, until I saw a finger of his left hand begin gently to stir.",
-            path: "./assets/dreams-d12+13-s02.png",
+              "In a region like the Alyscamps near Arles I came upon a twelfth-century helmeted crusader in chain mail lying with clasped hands, long seemingly dead. It was night.",
+            path: "./assets/dreams-d10+11-s02.png",
           },
         },
         {
@@ -694,7 +695,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d14",
+      id: "d12",
       title: {
         en: "The Frozen Worlds",
       },
@@ -727,7 +728,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "In the middle of summer an Arctic cold wave descended, freezing the land to ice; the whole of Lorraine and its canals were frozen and totally deserted, all living green things killed by frost.",
-            path: "./assets/dreams-d14-s01.png",
+            path: "./assets/dreams-d12-s01.png",
           },
         },
         {
@@ -742,7 +743,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "In a frightful cold I saw a leaf-bearing tree without fruit whose leaves had been transformed by frost into sweet grapes full of healing juices; I plucked the grapes and gave them to a large waiting crowd.",
-            path: "./assets/dreams-d14-s02.png",
+            path: "./assets/dreams-d12-s02.png",
           },
         },
         {
@@ -755,7 +756,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d15",
+      id: "d13",
       title: {
         en: "The Killing of Siegfried",
       },
@@ -786,8 +787,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "I saw an overwhelming vision: a cataract of blood poured from the mountains, carrying past a corpse of a blond-haired youth with a wound in the head, followed by a gigantic black scarab and then a red newborn sun rising out of the depths of the water.",
-            path: "./assets/dreams-d15-s01.png",
+              "A cataract of blood poured from the mountains, carrying past a corpse of a blond-haired youth with a wound in the head, followed by a gigantic black scarab and then a red newborn sun rising out of the depths of the water.",
+            path: "./assets/dreams-d13-s01.png",
           },
         },
         {
@@ -804,7 +805,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "In a lonely rocky mountain landscape with an unknown brown-skinned savage, we lay in wait with rifles after hearing Siegfried's horn; Siegfried appeared high on a crest, driving a chariot made of the bones of the dead down a precipitous slope, and when he turned a corner we shot him so that he plunged down dead as tremendous rain began to wipe out all traces.",
-            path: "./assets/dreams-d15-s02.png",
+            path: "./assets/dreams-d13-s02.png",
           },
         },
         {
@@ -820,7 +821,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d16",
+      id: "d14",
       title: {
         en: "Liverpool",
       },
@@ -853,7 +854,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "In dark, rainy Liverpool I climbed up to a plateau where a broad square was dimly lit by streetlights; in its center was a round pool with a small island blazing with sunlight, bearing a single magnolia tree in a shower of reddish blossoms which my companions did not see.",
-            path: "./assets/dreams-d16-s01.png",
+            path: "./assets/dreams-d14-s01.png",
           },
         },
         {
@@ -869,9 +870,9 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d17+18",
+      id: "d15+16",
       title: {
-        en: "The Unknown Wing of the House: The Library and the Manor",
+        en: "The Library; The Manor",
       },
       time: {
         en: "Recurring dreams before discovering alchemy; crucial dream around 1926",
@@ -902,7 +903,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "In the strange other wing of my house I discovered a wonderful library of sixteenth- and seventeenth-century pigskin-bound folios lining the walls, some adorned with strange copper engravings, and I felt only intense fascination.",
-            path: "./assets/dreams-d17+18-s01.png",
+            path: "./assets/dreams-d15+16-s01.png",
           },
         },
         {
@@ -923,8 +924,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "In wartime South Tyrol we crossed a bridge and passed through a tunnel with shell-damaged vaulting into the courtyard of a manor; as we reached the middle, both gates closed with a dull clang and the peasant driving cried, 'Now we are caught in the seventeenth century.'",
-            path: "./assets/dreams-d17+18-s02.png",
+              "In South Tyrol we got into the courtyard of a old manor; as we reached the middle, both gates closed with a dull clang. I thought, 'Now we are caught in the seventeenth century.' There was nobody there.",
+            path: "./assets/dreams-d15+16-s02.png",
           },
         },
         {
@@ -937,9 +938,9 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d19",
+      id: "d17",
       title: {
-        en: "The Unknown Wing of the House: The Fish Laboratory and the Reception Room for Spirits",
+        en: "The Fish Laboratory and the Reception Room for Spirits",
       },
       time: {
         en: "Mid-1940s, while working on the coniunctio and Christ symbolism",
@@ -970,7 +971,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "In the large unknown wing of my house I came through a big double door into a laboratory whose walls were lined with shelves holding hundreds of bottles containing every imaginable sort of fish.",
-            path: "./assets/dreams-d19-s01.png",
+            path: "./assets/dreams-d17-s01.png",
           },
         },
         {
@@ -983,8 +984,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "Near a curtain that bellied out as if from a draught, Hans checked for an open window and returned to say, 'It's haunted in there.'",
-            path: "./assets/dreams-d19-s02.png",
+              "A curtain that bellied out as if from a draught.",
+            path: "./assets/dreams-d17-s02.png",
           },
         },
         {
@@ -998,7 +999,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "Inside my mother's very large room, two rows of five chests hung about two feet above the floor from the ceiling, each chest containing two beds prepared for visiting spirits.",
-            path: "./assets/dreams-d19-s03.png",
+            path: "./assets/dreams-d17-s03.png",
           },
         },
         {
@@ -1010,7 +1011,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "Opposite my mother's room I entered a vast hotel-like hall with easy chairs, small tables, pillars and sumptuous hangings, where a brass band loudly blared dance tunes and marches to an otherwise empty room.",
-            path: "./assets/dreams-d19-s04.png",
+            path: "./assets/dreams-d17-s04.png",
           },
         },
         {
@@ -1026,7 +1027,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d20",
+      id: "d18",
       title: {
         en: "The Deceased Father: The Bible and the Highest Presence",
       },
@@ -1059,7 +1060,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "In my long-deceased father's study he took down a big heavy folio Bible bound in shiny fishskin, opened it swiftly at the Old Testament and spoke with such learned rapidity that I could not follow, while the other visitors thought he was lapsing into senile prattle.",
-            path: "./assets/dreams-d20-s01.png",
+            path: "./assets/dreams-d18-s01.png",
           },
         },
         {
@@ -1074,7 +1075,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "Following loud thumps in a haunted place, my father led me up a narrow staircase to a large hall like the divan-i-kaas of Akbar, from whose center a steep stair rose to a small upper door; before it he knelt and touched his forehead to the floor, saying he would lead me into the highest presence.",
-            path: "./assets/dreams-d20-s02.png",
+            path: "./assets/dreams-d18-s02.png",
           },
         },
         {
@@ -1090,7 +1091,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d21",
+      id: "d19",
       title: {
         en: "The Footsteps outside the Bollingen Tower",
       },
@@ -1123,7 +1124,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "On a still night at Bollingen I heard distant music, laughter, talking and soft footsteps circling the Tower, and then saw in imagination several hundred dark-clad figures pouring in around it with loud trampling, laughing, singing, and accordion playing.",
-            path: "./assets/dreams-d21-s01.png",
+            path: "./assets/dreams-d19-s01.png",
           },
         },
         {
@@ -1139,7 +1140,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d22",
+      id: "d20",
       title: {
         en: "The Arabian Prince",
       },
@@ -1171,8 +1172,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "In a walled Arab city on a broad plain, as I crossed the wide moat of the casbah, a handsome dark Arab approached and attacked me; we struggled, crashed against the railing, and both fell into the moat, each trying to force the other's head under water.",
-            path: "./assets/dreams-d22-s01.png",
+              "In a walled Arab city on a broad plain, as I crossed the wide moat of the casbah, a handsome dark Arab approached.",
+            path: "./assets/dreams-d20-s01.png",
           },
         },
         {
@@ -1186,8 +1187,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "In a large vaulted octagonal room at the center of the citadel, an open book with black calligraphy lay on the floor, my book; the young Arab prince sat at my right as I put my arm around his shoulders and compelled him to read it.",
-            path: "./assets/dreams-d22-s02.png",
+              "In a large vaulted octagonal room at the center of the citadel, an open book with black calligraphy lay on the floor; the handsome dark Arab sat at my right and read it.",
+            path: "./assets/dreams-d20-s02.png",
           },
         },
         {
@@ -1203,7 +1204,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d23",
+      id: "d21",
       title: {
         en: "The Black Barber",
       },
@@ -1232,8 +1233,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "My former black barber from Chattanooga held a tremendous red-hot curling iron to my head, intending to make my hair kinky, to give me Negro hair.",
-            path: "./assets/dreams-d23-s01.png",
+              "My former black barber held a tremendous red-hot curling iron.",
+            path: "./assets/dreams-d21-s01.png",
           },
         },
         {
@@ -1249,7 +1250,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d24",
+      id: "d22",
       title: {
         en: "The Grail and the Islands",
       },
@@ -1281,8 +1282,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "With many Zurich friends I was on an unknown island whose rocky southern coast bore a medieval castle; standing in its courtyard I knew it was the castle of the Grail where a celebration of the Grail would be held.",
-            path: "./assets/dreams-d24-s01.png",
+              "With friends I was on an unknown island whose rocky southern coast bore a medieval castle.",
+            path: "./assets/dreams-d22-s01.png",
           },
         },
         {
@@ -1296,7 +1297,7 @@ export const DREAMS: {
           image: {
             _prompt:
               "By the wall of a tall castle whose lower portion was covered by a black-iron trellis formed into a grapevine, I suddenly noticed a tiny iron hooded gnome, a cucullatus, scurrying from one little house on the vine to the next.",
-            path: "./assets/dreams-d24-s02.png",
+            path: "./assets/dreams-d22-s02.png",
           },
         },
         {
@@ -1309,8 +1310,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "On the northern part of the island, with no bridge or boat across the channel, I realized I alone must swim over to fetch the Grail and began to take off my clothes.",
-            path: "./assets/dreams-d24-s03.png",
+              "On the northern part of the island, with no bridge or boat across the channel.",
+            path: "./assets/dreams-d22-s03.png",
           },
         },
         {
@@ -1323,7 +1324,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d25",
+      id: "d23",
       title: {
         en: "The Deceased Wife",
       },
@@ -1355,8 +1356,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "In a dream like a vision my wife stood at some distance, in her prime of about thirty, wearing a special dress, looking at me squarely with an objectively wise and understanding expression, as if she were a portrait she had made for me.",
-            path: "./assets/dreams-d25-s01.png",
+              "In a dream like a vision my wife stood from afar, gazing at my direction.",
+            path: "./assets/dreams-d23-s01.png",
           },
         },
         {
@@ -1369,9 +1370,9 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d26+27",
+      id: "d24+25",
       title: {
-        en: "The Grave in the Bed and the Garden Party",
+        en: "The Grave in the Bed; The Garden Party",
       },
       time: {
         en: "Premonitions of deaths in family and among friends",
@@ -1394,8 +1395,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "My wife's bed had become a deep stone-walled pit like a grave; after a deep sigh a figure resembling her sat up from the pit and floated upward, wearing a white gown woven with curious black symbols.",
-            path: "./assets/dreams-d26+27-s01.png",
+              "In our bedroom, my wife's bed had become a deep stone-walled pit like a grave; after a deep sigh a figure resembling her sat up from the pit and floated upward, wearing a white gown woven with curious black symbols.",
+            path: "./assets/dreams-d24+25-s01.png",
           },
         },
         {
@@ -1416,8 +1417,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "At a garden party I saw my sister and a deceased friend present together; my sister was accompanied by a lady I knew well, and I concluded in the dream that this lady was going to die.",
-            path: "./assets/dreams-d26+27-s02.png",
+              "At a garden party I saw two women together, from afar.",
+            path: "./assets/dreams-d24+25-s02.png",
           },
         },
         {
@@ -1430,9 +1431,9 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d28",
+      id: "d26",
       title: {
-        en: "The Questions of the Spirit in Latin",
+        en: "The Questions from the Spirit",
       },
       time: {
         en: "1911, during a bicycle trip through northern Italy",
@@ -1455,8 +1456,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "In an assemblage of distinguished spirits of earlier centuries conversing in Latin, a gentleman with a long curly wig addressed me with a difficult question which I understood but could not answer in Latin, and I felt profoundly humiliated.",
-            path: "./assets/dreams-d28-s01.png",
+              "In an assemblage of distinguished people of earlier centuries conversing, a gentleman with a long curly wig was among them. I saw the scene from afar.",
+            path: "./assets/dreams-d26-s01.png",
           },
         },
         {
@@ -1476,7 +1477,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d29",
+      id: "d27",
       title: {
         en: "The Deceased Friend",
       },
@@ -1501,8 +1502,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "I visited a recently deceased friend whose home on a hill was enclosed by old castle walls around a square with a small church and a few buildings; he sat at a table with his daughter, so absorbed in what she said that he greeted me only with a casual wave, as if to say, 'Don't disturb me.'",
-            path: "./assets/dreams-d29-s01.png",
+              "My friend sat at a table in the house with his daughter, who was about 25 years old, absorbed in what she said. I saw the scene from afar.",
+            path: "./assets/dreams-d27-s01.png",
           },
         },
         {
@@ -1515,7 +1516,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d30",
+      id: "d28",
       title: {
         en: "The Wolfhound",
       },
@@ -1540,8 +1541,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "In a dense gloomy forest strewn with gigantic boulders among huge jungle-like trees, a piercing whistle sounded and a gigantic wolfhound with a fearful gaping maw burst forth and tore past me, and I knew the Wild Huntsman had sent it to carry away a human soul.",
-            path: "./assets/dreams-d30-s01.png",
+              "In a dense gloomy forest strewn with gigantic boulders among huge jungle-like trees, a gigantic wolfhound with a fearful gaping maw burst forth.",
+            path: "./assets/dreams-d28-s01.png",
           },
         },
         {
@@ -1557,7 +1558,7 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d31",
+      id: "d29",
       title: {
         en: "The Deceased Father: Marital Consultation",
       },
@@ -1582,8 +1583,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "My father appeared again in a dream as if returned from a distant journey, looking rejuvenated, and told me that since I was a psychologist he wished to consult me about marital psychology.",
-            path: "./assets/dreams-d31-s01.png",
+              "My father returned from a distant journey. I saw him standing at the door.",
+            path: "./assets/dreams-d29-s01.png",
           },
         },
         {
@@ -1596,9 +1597,9 @@ export const DREAMS: {
       ],
     },
     {
-      id: "d32",
+      id: "d30+31",
       title: {
-        en: "The UFOs and the Meditating Yogi",
+        en: "The UFOs; The Meditating Yogi",
       },
       time: {
         en: "After his 1944 illness (yogi) and October 1958 (UFOs)",
@@ -1621,8 +1622,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "From my house I saw two lens-shaped metallically gleaming disks in the sky, then another body flew directly toward me like a telescope objective, followed by a lens with a metallic extension leading to a box like a magic lantern, as I thought that perhaps we are the projections of the UFOs.",
-            path: "./assets/dreams-d32-s01.png",
+              "I saw two metallically gleaming disks moving through the night sky from afar.",
+            path: "./assets/dreams-d30+31-s01.png",
           },
         },
         {
@@ -1636,8 +1637,8 @@ export const DREAMS: {
           },
           image: {
             _prompt:
-              "In a small wayside chapel with only a wonderful flower arrangement on the altar, a yogi sat in lotus posture on the floor in deep meditation; when I looked closely I saw he had my face.",
-            path: "./assets/dreams-d32-s02.png",
+              "Inside a small wayside chapel with only a wonderful flower arrangement on the altar, a yogi sat in lotus posture on the floor in deep meditation.",
+            path: "./assets/dreams-d30+31-s02.png",
           },
         },
         {
