@@ -34,11 +34,17 @@ export const TRANSLATIONS: LocalizedContent = {
   returnToGallery: { en: "Return to Gallery", zh: "返回画廊" },
   scene: { en: "Scene", zh: "场景" },
   interpretation: { en: "Interpretation", zh: "解析" },
+  context: { en: "Context", zh: "背景" },
+  impact: { en: "Impact", zh: "影响" },
   jungsReflection: { en: "Jung's Reflection", zh: "荣格的思考" },
   keyConceptsIdentified: { en: "Key Concepts Identified", zh: "识别到的核心概念" },
   connectedDreams: { en: "Connected Dreams", zh: "关联梦境" },
   archetypesAndPrinciples: { en: "Archetypes & Principles", zh: "原型与法则" },
   royalRoad: { en: "The Royal Road to the Unconscious", zh: "通往无意识的皇极大路" },
+  sourceNote: { en: "Source", zh: "来源" },
+  noImage: { en: "Image coming soon", zh: "图片即将上线" },
+  textOnly: { en: "Text only entry", zh: "仅文本内容" },
+  visual: { en: "Visual", zh: "图像" },
 
   // --- Concepts ---
 
