@@ -1,12 +1,13 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { CONCEPTS_DATA } from '../constants';
+import { CONCEPTS_DATA, DREAMS } from '../constants';
 import { DecorativeFrame } from '../components/common/UIElements';
 import { useLanguage } from '../contexts/LanguageContext';
+import { getContentString } from '../utils/content';
 
 const ConceptDetail: React.FC = () => {
   const { id } = useParams();
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const concept = CONCEPTS_DATA.find(c => c.id === id);
   
   if (!concept) return <div className="pt-40 text-center text-3xl font-display">Concept not found</div>;
@@ -15,6 +16,11 @@ const ConceptDetail: React.FC = () => {
   const relatedConceptsList = concept.relatedConcepts
     ? CONCEPTS_DATA.filter(c => concept.relatedConcepts?.includes(c.id))
     : [];
+
+  const manualRelatedDreams = new Set(concept.relatedDreams ?? []);
+  const dreamsForConcept = DREAMS.dreams.filter(
+    d => d.relatedConcepts.includes(concept.id) || manualRelatedDreams.has(d.id)
+  );
 
   const fullDescription = t(concept.fullDescription);
 
@@ -40,13 +46,13 @@ const ConceptDetail: React.FC = () => {
 
         <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Related Dreams */}
-          {concept.relatedDreams && concept.relatedDreams.length > 0 && (
+          {dreamsForConcept.length > 0 && (
             <div className="p-10 bg-jung-gold/10 border-2 border-jung-gold/30 rounded">
                <h4 className="font-display font-bold text-3xl text-jung-gold mb-6">{t('relatedDreams')}</h4>
                <div className="flex flex-col gap-4">
-                  {concept.relatedDreams.map(dId => (
-                    <Link key={dId} to={`/dreams/${dId}`} className="text-lg font-bold font-sans hover:text-jungLight-accent dark:hover:text-jungDark-accent underline decoration-jung-gold hover:decoration-jungLight-accent dark:hover:decoration-jungDark-accent underline-offset-4 transition-colors">
-                      {t('viewDream')}: {dId} →
+                  {dreamsForConcept.map(dream => (
+                    <Link key={dream.id} to={`/dreams/${dream.id}`} className="text-lg font-bold font-sans hover:text-jungLight-accent dark:hover:text-jungDark-accent underline decoration-jung-gold hover:decoration-jungLight-accent dark:hover:decoration-jungDark-accent underline-offset-4 transition-colors">
+                      {t('viewDream')}: {getContentString(dream.title, lang)} →
                     </Link>
                   ))}
                </div>

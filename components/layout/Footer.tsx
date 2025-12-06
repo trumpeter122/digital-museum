@@ -8,9 +8,9 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-8 text-center">
         <h3 className="font-display text-4xl font-bold text-jung-gold mb-8">{t('museumTitle')}</h3>
         <p className="font-body text-2xl opacity-80 italic mb-10 font-medium">"Who looks outside, dreams; who looks inside, awakes."</p>
-        <div className="text-base font-sans font-bold opacity-50 tracking-wider">
-          © {new Date().getFullYear()} Digital Museum. A tribute to C.G. Jung.
-        </div>
+        {/* <div className="text-base font-sans font-bold opacity-50 tracking-wider"> */}
+        {/*   {new Date().getFullYear()} A tribute to C.G. Jung. */}
+        {/* </div> */}
       </div>
     </footer>
   );

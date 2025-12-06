@@ -4,11 +4,47 @@ import { ConceptId } from './data/registry';
 export type Language = 'en' | 'zh';
 export type Theme = 'light' | 'dark';
 
-export interface DreamScene {
+export type ContentValue = string | string[];
+export type Content = {
+  en: ContentValue;
+  zh: ContentValue;
+  [key: string]: ContentValue;
+};
+
+export type TextBlock = {
   id: string;
-  text: string;
-  imageUrl: string;
-  interpretation?: string;
+  text: Content;
+};
+
+export type ContextBlock = TextBlock & { textBlockType: 'context' };
+export type InterpretationBlock = TextBlock & { textBlockType: 'interpretation' };
+export type ImpactBlock = TextBlock & { textBlockType: 'impact' };
+export type SceneBlock = TextBlock & {
+  textBlockType: 'scene';
+  image: {
+    path: string;
+    _prompt?: string;
+  } | null;
+};
+
+export type DreamContentBlock =
+  | ContextBlock
+  | InterpretationBlock
+  | ImpactBlock
+  | SceneBlock;
+
+export interface Dream {
+  id: string;
+  title: Content;
+  time: Content;
+  location: any;
+  contents: DreamContentBlock[];
+  relatedConcepts: ConceptId[];
+}
+
+export interface DreamsData {
+  dreams: Dream[];
+  metadata: any;
 }
 
 export interface Concept {
@@ -17,7 +53,8 @@ export interface Concept {
   shortDescription: string;
   fullDescription: string;
   imageUrl: string;
-  relatedConcepts?: ConceptId[]; // Strictly typed IDs
+  relatedConcepts?: ConceptId[];
+  relatedDreams?: string[];
 }
 
 export interface ContentText {

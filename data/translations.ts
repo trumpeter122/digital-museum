@@ -22,8 +22,23 @@ export const TRANSLATIONS: LocalizedContent = {
     en: "Analytical psychology distinguishes itself from Freud's psychoanalysis by suggesting that the unconscious is not just a repository of repressed personal memories, but also contains the Collective Unconscious—a reservoir of the experiences of our species.",
     zh: "分析心理学与弗洛伊德的精神分析学不同，它认为无意识不仅仅是被压抑的个人记忆的仓库，还包含集体无意识——即我们物种经验的蓄水池。"
   },
+  introMDRStatement: {
+    en: "Dreams sit at the heart of analytical psychology. Through the dreams recorded in Memories, Dreams, Reflections we trace Jung's life and the unfolding of his ideas.",
+    zh: "梦境处于分析心理学的核心位置。通过《回忆·梦·思考》中记载的梦，我们追溯荣格的一生以及他思想的展开。"
+  },
+  introMDRDescription: {
+    en: "First published in 1961, Memories, Dreams, Reflections is part memoir, part psychological exploration—Jung's own guide to the inner landscape that shaped his work.",
+    zh: "《回忆·梦·思考》首次出版于1961年，是自传与心理探索的融合——荣格亲自引领的内心旅程，也是其思想的源泉。"
+  },
+  introMDRScopeTitle: { en: "Scope", zh: "范围" },
+  introMDRScope1: {
+    en: "Dreams mentioned in Memories, Dreams, Reflections' main body (excluding the appendices)",
+    zh: "《回忆·梦·思考》正文中提到的梦（不含附录）"
+  },
+  introMDRScope2: { en: "Dreams dreamt by Jung himself", zh: "荣格本人所做的梦" },
+  introMDRScope3: { en: "Explicitly marked Dreams, not images, visions, or fantasies", zh: "明确标注为梦境的内容，不包含图像、异象或幻想" },
   introBook: { en: "Memories, Dreams, Reflections", zh: "回忆·梦·思考" },
-  heroTitle: { en: "The Inner World", zh: "内在世界" },
+  heroTitle: { en: "The Dream World", zh: "梦境世界" },
   heroSubtitle: { en: "Explore the unconscious mind through the documented dreams of C.G. Jung.", zh: "通过荣格记录的梦境，探索无意识的心灵。" },
   heroBookTitle: { en: "Memories • Dreams • Reflections", zh: "回忆 • 梦 • 思考" },
   backToConcepts: { en: "← Back to Concepts", zh: "← 返回核心概念" },
@@ -130,6 +145,13 @@ export const TRANSLATIONS: LocalizedContent = {
   c_synchronicity_full: {
     en: "Synchronicity describes circumstances that appear meaningfully related yet lack a causal connection. It suggests a deep underlying order of the universe where the psyche and matter overlap.",
     zh: "共时性描述了看似有意义相关但缺乏因果联系的情况。它暗示了宇宙深层的潜在秩序，即心灵与物质重叠的地方。"
+  },
+
+  // --- Misc ---
+  disclaimerTitle: { en: "Disclaimer", zh: "免责声明" },
+  disclaimerText: {
+    en: "This project employs AI models (Doubao, ChatGPT) to generate visual art and translate text. Both the AI-generated outputs and the textual excerpts from the book may be protected by copyright. The project is intended solely for educational use; any commercial exploitation is strictly prohibited.",
+    zh: "本项目使用人工智能模型（豆包、ChatGPT）生成视觉艺术作品并翻译文本。AI 生成的内容以及书中摘录的文字均可能受版权保护。本项目仅限教育用途，严禁任何商业利用。"
   },
 
   // --- Dreams ---

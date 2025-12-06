@@ -20,9 +20,9 @@ const Navbar: React.FC = () => {
     : 'bg-transparent py-8'
     }`;
 
-  const linkClass = (path: string) => `hover:text-jung-gold transition-colors ${location.pathname === path || (path !== '/' && location.pathname.startsWith(path))
+  const linkClass = (path: string) => `transition-colors ${location.pathname === path || (path !== '/' && location.pathname.startsWith(path))
     ? 'text-jung-gold'
-    : 'text-jungLight-text dark:text-jungDark-text'
+    : 'text-jungLight-text dark:text-jungDark-text hover:text-jungLight-accent dark:hover:text-jungDark-accent'
     }`;
 
   return (
